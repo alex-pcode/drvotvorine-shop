@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Drvotvorine — Montessori igračke iz Šapca</title>
+<meta name="description" content="Ručno rađene Montessori igračke i pomagači za decu od breze i bukve. Šabac, dostava širom Srbije.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bark:#573c27;--wood:#7e502f;--oak:#a26a45;--cream:#f4efe4;--paper:#fbf8f1;--sand:#e4dccb;--ink:#2b1e14;--muted:#7a6a5a;--line:#e0d6c2;
+--red:#d94a3a;--yellow:#f0bf2c;--green:#6fae3a;--blue:#1e93cf;--r:20px;--sh:0 12px 30px -14px rgba(87,60,39,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Figtree",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.1;color:var(--bark)}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;border:2px solid var(--bark);cursor:pointer;transition:transform .15s,background .15s,color .15s;font-family:inherit}
+.btn-dark{background:var(--bark);color:var(--cream)}.btn-dark:hover{background:var(--wood);border-color:var(--wood);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--bark)}.btn-ghost:hover{background:var(--bark);color:var(--cream)}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--oak)}
+.dots{display:inline-flex;gap:5px;vertical-align:middle}.dots i{width:10px;height:10px;border-radius:50%}
+.dots i:nth-child(1){background:var(--red)}.dots i:nth-child(2){background:var(--yellow)}.dots i:nth-child(3){background:var(--green)}.dots i:nth-child(4){background:var(--blue)}
+.announce{background:var(--bark);color:var(--sand);font-size:13px;font-weight:700;text-align:center;padding:9px 12px}
+header.site{position:sticky;top:0;z-index:50;background:rgba(244,239,228,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Young Serif",serif;font-size:23px;color:var(--bark)}
+.logo img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+nav.main{display:flex;gap:28px;font-weight:700;font-size:15px}
+nav.main a:hover{color:var(--oak)}
+.hero{padding:52px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center}
+.hero h1{font-size:clamp(42px,6vw,80px);margin:16px 0 20px}
+.hero h1 em{font-style:normal;color:var(--oak)}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:32ch;margin-bottom:30px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{position:relative;aspect-ratio:4/5}
+.hero-art .blob{position:absolute;inset:6% -6% -4% 12%;background:var(--sand);border-radius:46% 54% 44% 56%/52% 42% 58% 48%}
+.hero-art .main{position:absolute;inset:0 10% 6% 0;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transform:rotate(-2deg)}
+.hero-art .main img{width:100%;height:100%;object-fit:cover}
+.hero-art .mini{position:absolute;right:0;bottom:0;width:42%;aspect-ratio:1;border-radius:18px;overflow:hidden;border:6px solid var(--cream);box-shadow:var(--sh);transform:rotate(4deg)}
+.hero-art .mini img{width:100%;height:100%;object-fit:cover}
+.usps{background:var(--bark);color:var(--cream)}
+.usps .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.usp{padding:22px 16px;border-right:1px dashed rgba(244,239,228,.25)}.usp:last-child{border:0}
+.usp b{display:block;font-size:15px}.usp small{color:var(--sand);font-size:13px}
+section.block{padding:88px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(32px,4.2vw,52px)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.card .ph{aspect-ratio:4/5;background:var(--sand);overflow:hidden;position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;top:12px;left:12px;background:var(--bark);color:var(--cream);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px}
+.card .info{padding:16px 18px 20px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card h3{font-size:20px}.card p{font-size:14px;color:var(--muted);flex:1}
+.price{font-weight:800;color:var(--bark);margin-top:8px}.price.q{color:var(--muted);font-weight:600}
+.story{background:var(--paper);border-block:1px solid var(--line)}
+.story .wrap{display:grid;grid-template-columns:.8fr 1fr;gap:56px;align-items:center}
+.story img{border-radius:var(--r);box-shadow:var(--sh);max-height:560px;width:100%;object-fit:cover}
+.story h2{font-size:clamp(32px,4vw,48px);margin:12px 0 18px}
+.story p{color:var(--muted);margin-bottom:14px;font-size:17px}
+.ticks{list-style:none;margin-top:18px;display:grid;gap:8px;font-weight:600}
+.ticks li::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--yellow);margin-right:10px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.rev.big{grid-column:span 2;background:var(--bark);color:var(--cream);border:0}
+.rev q{display:block;font-family:"Young Serif",serif;font-size:19px;line-height:1.35;quotes:"\201E" "\201C"}
+.rev.big q{font-size:24px}
+.rev cite{display:block;margin-top:14px;font-style:normal;font-size:13px;font-weight:700;color:var(--oak)}
+.rev.big cite{color:var(--yellow)}
+.note{font-size:13px;color:var(--muted);margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{padding:26px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line)}
+.step span{font-family:"Young Serif",serif;font-size:44px;color:var(--oak)}
+.step h3{font-size:22px;margin:4px 0 8px}.step p{color:var(--muted);font-size:15px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:800;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--oak)}details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;max-width:70ch}
+footer{background:var(--bark);color:var(--sand);padding:56px 0 30px;margin-top:0}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer h4{font-family:"Young Serif",serif;font-weight:400;color:var(--cream);font-size:20px;margin-bottom:10px}
+footer a:hover{color:#fff}footer small{display:block;margin-top:34px;grid-column:1/-1;color:#b7a68f;font-size:12px}
+@media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}.hero .wrap,.story .wrap{grid-template-columns:1fr}.usps .wrap{grid-template-columns:1fr 1fr}.reviews{grid-template-columns:1fr}.rev.big{grid-column:auto}.steps{grid-template-columns:1fr}footer .wrap{grid-template-columns:1fr}nav.main{display:none}.hero-art{max-width:460px}}
+@media(max-width:520px){.grid{gap:14px}.card h3{font-size:17px}section.block{padding:60px 0}.usp{border-right:0;border-bottom:1px dashed rgba(244,239,228,.2)}}
+</style>
+</head>
+<body>
+<div class="announce">Ručna izrada u Šapcu · Dostava moguća širom Srbije · Porudžbine preko Instagram poruka</div>
+<header class="site"><div class="wrap">
+  <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Drvotvorine logo">Drvotvorine</a>
+  <nav class="main"><a href="#igracke">Igračke</a><a href="#radionica">Radionica</a><a href="#utisci">Utisci</a><a href="#porucivanje">Poručivanje</a><a href="#pitanja">Pitanja</a></nav>
+  <a class="btn btn-dark" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener">Piši nam u DM</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Montessori igračke · Šabac</span>
+    <h1>Mala ruka, <em>velika samostalnost.</em></h1>
+    <p class="lead">Igračke i pomagači od breze i bukve, ručno izrađeni, sa zaobljenim ivicama i bojama na vodenoj bazi.</p>
+    <div class="ctas"><a class="btn btn-dark" href="toranj.html">Montessori toranj</a><a class="btn btn-ghost" href="#igracke">Sve igračke</a></div>
+  </div>
+  <div class="hero-art"><div class="blob"></div>
+    <div class="main"><img src="img/toranj-1.jpg" alt="Montessori kuhinjski toranj od breze sa žutom prečkom"></div>
+    <div class="mini"><img src="img/guralica.jpg" alt="Drvena guralica"></div>
+  </div>
+</div></section>
+
+<div class="usps"><div class="wrap">
+  <div class="usp"><b>Ručna izrada</b><small>Izrađeno u Šapcu</small></div>
+  <div class="usp"><b>Breza i bukva</b><small>Prirodni materijali</small></div>
+  <div class="usp"><b>Bezbedne boje</b><small>Vodena baza, zaobljene ivice</small></div>
+  <div class="usp"><b>Dostava po Srbiji</b><small>Porudžbine u DM</small></div>
+</div></div>
+
+<section class="block" id="igracke"><div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Iz naše radionice</span><h2>Igračke koje rastu sa detetom</h2></div><span class="dots"><i></i><i></i><i></i><i></i></span></div>
+  <div class="grid">
+    <a class="card" href="toranj.html"><div class="ph"><img src="img/toranj-1.jpg" alt="Montessori kuhinjski toranj" loading="lazy"><span class="tag">Najtraženije</span></div><div class="info"><h3>Montessori kuhinjski toranj</h3><p>Tri nivoa visine, od prve do pete godine.</p><span class="price">12.000 RSD</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/pikler.jpg" alt="Piklerov trougao sa šarenim prečkama" loading="lazy"></div><div class="info"><h3>Piklerov trougao</h3><p>Penjanje, provlačenje, ravnoteža i samopouzdanje.</p><span class="price">12.000 RSD</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/playbox.jpg" alt="PlayBox sklopivi bazen sa lopticama" loading="lazy"></div><div class="info"><h3>PlayBox — sklopivi bazen</h3><p>95 × 95 × 22 cm, u kompletu 200 loptica u boji po izboru.</p><span class="price">12.000 RSD</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/balans.jpg" alt="Balans daska od breze" loading="lazy"></div><div class="info"><h3>Balans daska</h3><p>Ljuljanje, most, tunel — igra bez ograničenja.</p><span class="price">2.500 RSD</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/guralica.jpg" alt="Drvena guralica sa zupčanicima" loading="lazy"></div><div class="info"><h3>Guralica 2 u 1</h3><p>Oslonac za prve korake i aktivna tabla sa zupčanicima. 50 × 36 × 41 cm.</p><span class="price q">Cena na upit</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/babygym.jpg" alt="Baby gym Prvi pokreti" loading="lazy"></div><div class="info"><h3>Baby gym „Prvi pokreti“</h3><p>Sklapa se sa dva šrafa. 50 × 50 × 70 cm.</p><span class="price q">Cena na upit</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/penjalica.jpg" alt="Penjalica u natur varijanti" loading="lazy"></div><div class="info"><h3>Penjalica i dodaci</h3><p>Merdevine i tobogan za pravi kućni poligon.</p><span class="price q">Cena na upit</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/puzla.jpg" alt="Drvena puzla sa imenom deteta" loading="lazy"><span class="tag">Novo</span></div><div class="info"><h3>Puzla sa imenom</h3><p>Ime po želji, nežne boje. Prva probna verzija.</p><span class="price q">Cena na upit</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/slova.jpg" alt="Drvena slova" loading="lazy"></div><div class="info"><h3>Drvena slova</h3><p>Visina 10 cm, mekana na dodir, potpuno bezbedna.</p><span class="price q">Cena na upit</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/piramida.jpg" alt="Drvena piramida od bukve" loading="lazy"></div><div class="info"><h3>Slagalica od bukve</h3><p>Ručno rađena Montessori slagalica od prirodne bukve.</p><span class="price q">Cena na upit</span></div></a>
+    <a class="card" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener"><div class="ph"><img src="img/organizator.jpg" alt="Organizator za sto od šperploče" loading="lazy"></div><div class="info"><h3>Organizator za sto</h3><p>Satovi, telefon, naočare, novčanik i ključevi na jednom mestu.</p><span class="price q">Cena na upit</span></div></a>
+  </div>
+  <p class="note">Detaljna stranica postoji za kuhinjski toranj; ostale igračke se poručuju u poruci na Instagramu.</p>
+</div></section>
+
+<section class="block story" id="radionica"><div class="wrap">
+  <img src="img/toranj-3.jpg" alt="CNC sečenje šperploče za Montessori toranj">
+  <div>
+    <span class="eyebrow">Iz radionice</span>
+    <h2>Precizno seče mašina, ostalo je ručni rad</h2>
+    <p>Šperploča breze 18 mm, CNC preciznost i potpuno ručna završna obrada. Svaki toranj pravimo pažljivo i bez kompromisa, sa savršeno zaobljenim ivicama.</p>
+    <ul class="ticks"><li>Breza i bukva, prirodna tekstura drveta</li><li>Ekološke boje na vodenoj bazi</li><li>Zaobljene, glatko obrađene ivice</li><li>Izrađeno u Šapcu</li></ul>
+  </div>
+</div></section>
+
+<section class="block" id="utisci"><div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Vaši utisci</span><h2>Zbog ovakvih reči imamo motiv za rad</h2></div></div>
+  <div class="reviews">
+    <div class="rev big"><q>…toranj je izuzetno stabilan i kvalitetan, i ima tri nivoa tako da raste sa detetom… ovo je definitivno najbolja opcija na tržištu, ako ne želite da beba preraste za čas. A usput stvarno kvalitetno.</q><cite>Ana · njena priča na Instagramu</cite></div>
+    <div class="rev"><q>Toranj je prevazisao sva nasa ocekivanja, sin je odusevljen! Svaka vam cast, zaista je kvalitetno uradjen!</q><cite>Kupac · poruka u DM-u</cite></div>
+    <div class="rev"><q>Stigao je toranj! Bebac je prezadovoljan, hvala puno</q><cite>Kupac · poruka u DM-u</cite></div>
+    <div class="rev"><q>Preeeedivan je, cvrst, stabilan... Ma sjajan!</q><cite>Kupac · poruka u DM-u</cite></div>
+    <div class="rev"><q>Prezadovoljni smo i mnogo nam znaci zbog razvoja motorike! Preporucicemo Vas drugarima!</q><cite>Kupac · poruka u DM-u</cite></div>
+  </div>
+  <p class="note">Utisci su preuzeti iz istaknutih priča „Vaši utisci“ na Instagram profilu @drvotvorine_sabac, u izvornom obliku. Imena kupaca u porukama nisu objavljena.</p>
+</div></section>
+
+<section class="block" id="porucivanje" style="background:var(--paper);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow">Poručivanje</span><h2>Tri koraka do vaše igračke</h2></div></div>
+  <div class="steps">
+    <div class="step"><span>1</span><h3>Pišite nam u DM</h3><p>Recite koju igračku želite (i boju prečke ili loptica).</p></div>
+    <div class="step"><span>2</span><h3>Dogovaramo detalje</h3><p>Potvrđujemo cenu, rok izrade i način plaćanja.</p></div>
+    <div class="step"><span>3</span><h3>Šaljemo poštom</h3><p>Paket stiže na vašu adresu, dostava je moguća širom Srbije.</p></div>
+  </div>
+  <div style="margin-top:34px"><a class="btn btn-dark" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener">Napiši poruku @drvotvorine_sabac</a></div>
+</div></section>
+
+<section class="block" id="pitanja"><div class="wrap" style="max-width:860px">
+  <div class="sec-head"><h2>Česta pitanja</h2></div>
+  <details><summary>Kako da poručim?</summary><p>Porudžbine primamo u poruci na Instagramu (@drvotvorine_sabac).</p></details>
+  <details><summary>Da li šaljete širom Srbije?</summary><p>Da, dostava je moguća širom Srbije.</p></details>
+  <details><summary>Od čega su igračke izrađene?</summary><p>Od brezove šperploče i punog drveta bukve, sa zaobljenim ivicama. Farbane su bezbednim bojama na vodenoj bazi.</p></details>
+  <details><summary>Koliko košta dostava i koliko se čeka?</summary><p>Cenu dostave i rok izrade potvrđujemo u poruci prilikom poručivanja.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <div><a class="logo" href="index.html" style="color:var(--cream)"><img src="img/logo.jpg" alt="">Drvotvorine</a><p style="margin-top:12px;max-width:34ch">Montessori igračke i praktični pomagači za decu. Prirodni materijali, ručna izrada, sigurna igra.</p></div>
+  <div><h4>Igračke</h4><a href="toranj.html">Kuhinjski toranj</a><br><a href="#igracke">Sve igračke</a></div>
+  <div><h4>Kontakt</h4><a href="https://www.instagram.com/drvotvorine_sabac/" target="_blank" rel="noopener">@drvotvorine_sabac</a><br>Šabac, Srbija</div>
+  <small>Demo prikaz izrađen na osnovu Instagram profila @drvotvorine_sabac. Nije zvanična prodavnica; cene i detalji se potvrđuju sa vlasnikom.</small>
+</div></footer>
+</body>
+</html>
