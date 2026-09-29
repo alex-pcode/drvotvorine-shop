@@ -116,14 +116,60 @@ table.spec td{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);background:var(--bark);color:var(--cream);padding:12px 20px;border-radius:99px;font-weight:700;font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:99}
 .toast.show{opacity:1;transform:translateX(-50%)}
 @media(max-width:980px){.pdp,.two{grid-template-columns:1fr}}
+.cartbtn{position:relative;display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;background:var(--bark);color:var(--cream);font:800 14px Figtree,sans-serif;border:2px solid var(--bark);cursor:pointer}
+.cartbtn:hover{background:var(--wood);border-color:var(--wood)}
+.cartbtn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cartbtn .badge{min-width:22px;height:22px;padding:0 6px;border-radius:99px;background:var(--yellow);color:var(--bark);font-size:12px;display:grid;place-items:center}
+.cartbtn .badge.bump{transform:scale(1.3)}
+.card .opt2{margin-top:10px;display:grid;gap:6px;font-size:13px;font-weight:700;color:var(--oak)}
+.card .opt2 select,.card .opt2 input{width:100%;padding:9px 12px;border:2px solid var(--line);border-radius:12px;background:#fff;font:600 14px Figtree,sans-serif;color:var(--ink)}
+.card .add{margin-top:12px;padding:11px 18px;justify-content:center;font-size:14px}
+.qtyrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.qty{display:inline-flex;align-items:center;border:2px solid var(--line);border-radius:99px;background:var(--paper)}
+.qty button{width:36px;height:36px;border:0;background:none;font-size:18px;font-weight:800;color:var(--bark);cursor:pointer}
+.qty span{min-width:26px;text-align:center;font-weight:800}
+.ov{position:fixed;inset:0;background:rgba(43,30,20,.5);z-index:90;opacity:0;pointer-events:none;transition:.2s}
+.ov.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--cream);z-index:91;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;box-shadow:-12px 0 40px -16px rgba(0,0,0,.4)}
+.drawer.open{transform:none}
+.dr-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.dr-head h2{font-size:26px}
+.dr-x{border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:var(--bark)}
+.dr-body{flex:1;overflow:auto;padding:18px 22px}
+.dr-foot{padding:16px 22px 20px;border-top:1px solid var(--line);background:var(--paper)}
+.line{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+.line img{width:64px;height:64px;border-radius:12px;object-fit:cover;background:var(--sand)}
+.line b{display:block;font-size:15px}.line small{display:block;color:var(--muted);font-size:13px}
+.line .qty{transform:scale(.85);transform-origin:left;margin-top:4px}
+.line .rm{border:0;background:none;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer;display:block;margin-top:2px}
+.line .lp{font-weight:800;color:var(--bark);white-space:nowrap}
+.tot{display:flex;justify-content:space-between;font-weight:800;font-size:18px;margin-bottom:4px}
+.tot-note{font-size:12px;color:var(--muted);margin-bottom:12px}
+.help{font-size:13px;color:var(--muted);margin-top:12px}
+.help a{color:var(--bark);font-weight:700;text-decoration:underline}
+.drawer .btn{width:100%;justify-content:center}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+.frm{display:grid;gap:12px}
+.frm label{display:grid;gap:5px;font-size:13px;font-weight:800;color:var(--oak)}
+.frm input,.frm textarea{width:100%;padding:11px 13px;border:2px solid var(--line);border-radius:12px;background:#fff;font:500 15px Figtree,sans-serif;color:var(--ink)}
+.frm input:focus,.frm textarea:focus,.card .opt2 select:focus,.card .opt2 input:focus{outline:0;border-color:var(--bark)}
+.frm .two2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pay{padding:12px 14px;border:2px solid var(--bark);border-radius:14px;background:var(--paper);font-weight:700;font-size:14px}
+.pay small{display:block;font-weight:500;color:var(--muted)}
+.sum{margin:14px 0;padding:14px;border-radius:14px;background:var(--paper);border:1px solid var(--line);font-size:14px}
+.sum div{display:flex;justify-content:space-between;gap:10px;padding:3px 0}
+.ok{text-align:center;padding:30px 4px}
+.ok h3{font-size:32px;margin:12px 0}.ok p{color:var(--muted)}
+.ok .tick{width:64px;height:64px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;margin:0 auto;font-size:34px}
+.link{border:0;background:none;color:var(--bark);text-decoration:underline;font:700 14px Figtree,sans-serif;cursor:pointer;margin-bottom:12px}
 </style>
 </head>
 <body>
-<div class="announce">Ručna izrada u Šapcu · Dostava moguća širom Srbije · Porudžbine preko Instagram poruka</div>
+<div class="announce">Ručna izrada u Šapcu · Dostava moguća širom Srbije · Plaćanje pouzećem</div>
 <header class="site"><div class="wrap">
   <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Drvotvorine logo">Drvotvorine</a>
   <nav class="main"><a href="index.html#igracke">Igračke</a><a href="index.html#radionica">Radionica</a><a href="index.html#utisci">Utisci</a><a href="index.html#porucivanje">Poručivanje</a></nav>
-  <a class="btn btn-dark" href="https://ig.me/m/drvotvorine_sabac" target="_blank" rel="noopener">Piši nam u DM</a>
+  <button class="cartbtn" id="cartBtn" type="button" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Korpa <span class="badge" id="cartCount">0</span></button>
 </div></header>
 
 <main class="wrap">
@@ -151,11 +197,14 @@ table.spec td{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
           <button class="sw on" data-c="žuta"><i style="background:var(--yellow)"></i>Žuta</button>
         </div>
       </div>
-      <div class="cta">
-        <button class="btn btn-dark" id="order">Poruči u DM-u</button>
-        <a class="btn btn-ghost" href="index.html#porucivanje">Kako se poručuje</a>
+      <div class="opt"><b>Količina</b>
+        <div class="qtyrow"><div class="qty"><button type="button" id="qm" aria-label="Manje">&minus;</button><span id="qv">1</span><button type="button" id="qp" aria-label="Više">+</button></div></div>
       </div>
-      <div class="msg" id="msg"></div>
+      <div class="cta">
+        <button class="btn btn-dark" id="order" type="button">Dodaj u korpu</button>
+        <a class="btn btn-ghost" href="index.html#igracke">Nastavi razgledanje</a>
+      </div>
+      <p class="help">Plaćanje pouzećem. Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/drvotvorine_sabac/" target="_blank" rel="noopener">@drvotvorine_sabac</a></p>
       <ul class="facts">
         <li>Ručna izrada od premium brezove šperploče (18 mm), stabilan i bezbedan od prevrtanja</li>
         <li>Savršeno glatke, zaobljene ivice</li>
@@ -180,8 +229,7 @@ table.spec td{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
         <tr><td>Završna obrada</td><td>Ekološke boje na bazi vode (akrilne), zaobljene ivice</td></tr>
         <tr><td>Nivoi visine</td><td>3</td></tr>
         <tr><td>Uzrast</td><td>Od prve do pete godine</td></tr>
-        <tr><td>Dimenzije</td><td>Na upit</td></tr>
-        <tr><td>Poručivanje</td><td>Poruka na Instagramu @drvotvorine_sabac</td></tr>
+        <tr><td>Plaćanje</td><td>Pouzećem</td></tr>
       </table>
     </div>
   </div>
@@ -204,7 +252,7 @@ table.spec td{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
   <details><summary>Do kog uzrasta se koristi?</summary><p>Ima 3 nivoa podešavanja visine, pa ga dete koristi od prve do pete godine.</p></details>
   <details><summary>Da li je bezbedan?</summary><p>Izrađen je od brezove šperploče 18 mm, stabilan je i bezbedan od prevrtanja, ivice su zaobljene i glatke, a boje su ekološke, na bazi vode.</p></details>
   <details><summary>Mogu li dvoje dece da stoje na njemu?</summary><p>Da, dovoljno je prostran da dvoje dece može istovremeno da stoji na njemu.</p></details>
-  <details><summary>Kako da poručim i kada stiže?</summary><p>Napišite nam u DM na Instagramu. Dostava je moguća širom Srbije; rok izrade i cenu dostave potvrđujemo u poruci.</p></details>
+  <details><summary>Kako da poručim i kada stiže?</summary><p>Izaberite boju prečke, dodajte toranj u korpu i popunite podatke za isporuku. Plaćanje je pouzećem. Dostava je moguća širom Srbije i obračunava se posebno; toranj se izrađuje ručno, pa rok izrade zavisi od porudžbine.</p></details>
 </div></section>
 
 <footer><div class="wrap">
@@ -213,21 +261,109 @@ table.spec td{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
   <div><h4>Kontakt</h4><a href="https://www.instagram.com/drvotvorine_sabac/" target="_blank" rel="noopener">@drvotvorine_sabac</a><br>Šabac, Srbija</div>
   <small>Demo prikaz izrađen na osnovu Instagram profila @drvotvorine_sabac. Nije zvanična prodavnica; cene i detalji se potvrđuju sa vlasnikom.</small>
 </div></footer>
-<div class="toast" id="toast">Poruka je kopirana. Nalepite je u DM.</div>
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-label="Korpa" aria-hidden="true">
+  <div class="dr-head"><h2 id="drTitle">Korpa</h2><button class="dr-x" id="drX" aria-label="Zatvori">&times;</button></div>
+  <div class="dr-body" id="drBody"></div>
+  <div class="dr-foot" id="drFoot"></div>
+</aside>
+<div class="toast" id="toast"></div>
 <script>
 (function(){
-  var big=document.getElementById('bigimg'),color='žuta';
+  var KEY='drvotvorine-cart';
+  var cart=[];
+  try{cart=JSON.parse(localStorage.getItem(KEY)||'[]')||[]}catch(e){cart=[]}
+  var $=function(i){return document.getElementById(i)};
+  var view='cart',last=null;
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(cart))}catch(e){}}
+  function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' RSD'}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function count(){return cart.reduce(function(a,l){return a+l.qty},0)}
+  function total(){return cart.reduce(function(a,l){return a+l.qty*l.price},0)}
+  function toast(t){var e=$('toast');e.textContent=t;e.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){e.classList.remove('show')},2200)}
+  function badge(){var b=$('cartCount');b.textContent=count();b.classList.add('bump');setTimeout(function(){b.classList.remove('bump')},200)}
+  function add(item){
+    var key=item.id+'|'+(item.opt||'');
+    var l=cart.filter(function(x){return x.key===key})[0];
+    if(l)l.qty+=item.qty;else cart.push({key:key,id:item.id,name:item.name,opt:item.opt||'',price:item.price,img:item.img,qty:item.qty});
+    save();badge();toast('Dodato u korpu: '+item.name);
+  }
+  function open(v){view=v||'cart';render();$('drawer').classList.add('open');$('ov').classList.add('open');$('drawer').setAttribute('aria-hidden','false')}
+  function close(){$('drawer').classList.remove('open');$('ov').classList.remove('open');$('drawer').setAttribute('aria-hidden','true')}
+  var HELP='<p class="help">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/drvotvorine_sabac/" target="_blank" rel="noopener">@drvotvorine_sabac</a></p>';
+  function sumHtml(lines,tot){
+    return '<div class="sum">'+lines.map(function(l){return '<div><span>'+l.qty+' &times; '+esc(l.name)+(l.opt?' ('+esc(l.opt)+')':'')+'</span><b>'+fmt(l.qty*l.price)+'</b></div>'}).join('')+'<div style="border-top:1px solid var(--line);margin-top:6px;padding-top:8px"><b>Ukupno</b><b>'+fmt(tot)+'</b></div></div>';
+  }
+  function render(){
+    var body=$('drBody'),foot=$('drFoot'),h='';
+    $('drTitle').textContent=view==='cart'?'Korpa':view==='checkout'?'Podaci za isporuku':'Porudžbina primljena';
+    if(view==='cart'){
+      if(!cart.length){body.innerHTML='<div class="empty">Korpa je prazna.</div>';foot.innerHTML='<button class="btn btn-ghost" id="keep">Nastavi razgledanje</button>'+HELP;$('keep').onclick=close;return}
+      cart.forEach(function(l,i){
+        h+='<div class="line"><img src="'+esc(l.img)+'" alt=""><div><b>'+esc(l.name)+'</b>'+(l.opt?'<small>'+esc(l.opt)+'</small>':'')+
+        '<div class="qty"><button data-d="-1" data-i="'+i+'" aria-label="Manje">&minus;</button><span>'+l.qty+'</span><button data-d="1" data-i="'+i+'" aria-label="Više">+</button></div>'+
+        '<button class="rm" data-rm="'+i+'">Ukloni</button></div><div class="lp">'+fmt(l.qty*l.price)+'</div></div>';
+      });
+      body.innerHTML=h;
+      foot.innerHTML='<div class="tot"><span>Ukupno</span><span>'+fmt(total())+'</span></div><div class="tot-note">Dostava se obračunava posebno. Plaćanje pouzećem.</div><button class="btn btn-dark" id="go">Nastavi na plaćanje</button>'+HELP;
+      $('go').onclick=function(){view='checkout';render()};
+    }else if(view==='checkout'){
+      body.innerHTML='<button class="link" id="back">&larr; Nazad na korpu</button><form class="frm" id="frm" novalidate>'+
+      '<label>Ime i prezime<input name="ime" required autocomplete="name"></label>'+
+      '<label>Adresa (ulica i broj)<input name="adresa" required autocomplete="street-address"></label>'+
+      '<div class="two2"><label>Grad<input name="grad" required autocomplete="address-level2"></label><label>Poštanski broj<input name="ptt" inputmode="numeric" autocomplete="postal-code"></label></div>'+
+      '<label>Telefon<input name="tel" type="tel" required autocomplete="tel"></label>'+
+      '<label>E-mail<input name="mail" type="email" required autocomplete="email"></label>'+
+      '<label>Napomena / personalizacija (opciono)<textarea name="nap" rows="3" placeholder="npr. ime za puzlu, željena boja, posebne želje"></textarea></label>'+
+      '<div class="pay">Plaćanje pouzećem<small>Plaćate kuriru pri preuzimanju paketa.</small></div>'+
+      sumHtml(cart,total())+
+      '<p id="err" style="color:#b3261e;font-size:13px;font-weight:700"></p></form>';
+      foot.innerHTML='<button class="btn btn-dark" id="send">Potvrdi porudžbinu</button><div class="tot-note" style="margin:10px 0 0">Dostava se obračunava posebno.</div>'+HELP;
+      $('back').onclick=function(){view='cart';render()};
+      $('send').onclick=submit;
+    }else{
+      body.innerHTML='<div class="ok"><div class="tick">&#10003;</div><h3>Hvala, porudžbina je primljena</h3><p>Porudžbina br. <b>'+last.no+'</b> za '+esc(last.ime)+' je zabeležena. Potvrdu šaljemo na '+esc(last.mail)+'. Plaćanje je pouzećem, pri preuzimanju paketa.</p></div>'+
+      sumHtml(last.lines,last.total)+(last.nap?'<div class="sum"><b>Napomena:</b> '+esc(last.nap)+'</div>':'');
+      foot.innerHTML='<button class="btn btn-dark" id="done">Nastavi razgledanje</button>'+HELP;
+      $('done').onclick=close;
+    }
+  }
+  function submit(){
+    var f=$('frm'),ok=true;
+    ['ime','adresa','grad','tel','mail'].forEach(function(n){var el=f.elements[n];el.style.borderColor='';if(!el.value.trim()){ok=false;el.style.borderColor='#b3261e'}});
+    var m=f.elements.mail.value.trim();
+    if(m&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)){ok=false;f.elements.mail.style.borderColor='#b3261e'}
+    if(!ok){$('err').textContent='Popunite obavezna polja (ime, adresa, grad, telefon, ispravan e-mail).';return}
+    last={no:'DV-'+String(Date.now()).slice(-6),ime:f.elements.ime.value.trim(),mail:m,nap:f.elements.nap.value.trim(),lines:cart.slice(),total:total()};
+    cart=[];save();badge();view='done';render();
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t.closest('#cartBtn')){open('cart');return}
+    if(t.id==='ov'||t.id==='drX'){close();return}
+    var d=t.getAttribute&&t.getAttribute('data-d');
+    if(d){var l=cart[+t.getAttribute('data-i')];l.qty=Math.max(1,l.qty+(+d));save();badge();render();return}
+    var r=t.getAttribute&&t.getAttribute('data-rm');
+    if(r!==null&&r!==undefined){cart.splice(+r,1);save();badge();render();return}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  $('cartCount').textContent=count();
+  window.Shop={add:add,open:open,fmt:fmt};
+})();
+</script>
+<script>
+(function(){
+  var big=document.getElementById('bigimg'),color='žuta',q=1;
   document.querySelectorAll('.thumbs button').forEach(function(b){b.addEventListener('click',function(){
     document.querySelectorAll('.thumbs button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');big.src=b.dataset.src;});});
-  var msg=document.getElementById('msg');
-  function text(){return 'Zdravo! Želim da poručim Montessori kuhinjski toranj (12.000 RSD), boja prečke: '+color+'.';}
-  function upd(){msg.textContent='Poruka za DM: „'+text()+'“';}
   document.querySelectorAll('.sw').forEach(function(s){s.addEventListener('click',function(){
-    document.querySelectorAll('.sw').forEach(function(x){x.classList.remove('on')});s.classList.add('on');color=s.dataset.c;upd();});});
-  upd();
+    document.querySelectorAll('.sw').forEach(function(x){x.classList.remove('on')});s.classList.add('on');color=s.dataset.c;});});
+  var qv=document.getElementById('qv');
+  document.getElementById('qm').addEventListener('click',function(){q=Math.max(1,q-1);qv.textContent=q});
+  document.getElementById('qp').addEventListener('click',function(){q=Math.min(20,q+1);qv.textContent=q});
   document.getElementById('order').addEventListener('click',function(){
-    try{navigator.clipboard.writeText(text());var t=document.getElementById('toast');t.classList.add('show');setTimeout(function(){t.classList.remove('show')},2600);}catch(e){}
-    window.open('https://ig.me/m/drvotvorine_sabac','_blank','noopener');
+    window.Shop.add({id:'toranj',name:'Montessori kuhinjski toranj',opt:'Boja prečke: '+color,price:12000,img:'img/toranj-1.jpg',qty:q});
+    q=1;qv.textContent=1;
   });
 })();
 </script>
